@@ -32,6 +32,9 @@ function draw() {
   gameobject1.x = mouseX;
   gameobject2.y = mouseY;
 
+  
+  isTouching (gameobject1,gameobject2);
+  
   if(movingRect.x - fixedRect.x <= movingRect.width/2+ fixedRect.width/2 &&
       fixedRect.x -movingRect.x <= movingRect.width/2+fixedRect.width/2
     ){
